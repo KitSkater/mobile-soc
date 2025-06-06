@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local SOC Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <h1>Local SOC Dashboard</h1>
+    <form id="filterForm">
+        <label for="ipFilter">IP:</label>
+        <input type="text" id="ipFilter" name="ipFilter">
+        <br>
+        <label for="typeFilter">Type:</label>
+        <select id="typeFilter">
+            <!-- Add alert types here -->
+        </select>
+        <br>
+        <label for="severityFilter">Severity:</label>
+        <select id="severityFilter">
+            <!-- Add severities here -->
+        </select>
+        <br>
+        <label for="startTime">Start Time:</label>
+        <input type="datetime-local" id="startTime" name="start_time">
+        <br>
+        <label for="endTime">End Time:</label>
+        <input type="datetime-local" id="endTime" name="end_time">
+        <br>
+        <button type="submit">Filter</button>
+    </form>
+    <div id="alertsContainer"></div>
+</body>
+</html>
